@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat&family=Roboto+Slab:wght@100;400&family=Skranji&display=swap');
 
 * {
-    
+
     font-family: 'Montserrat', sans-serif;
     box-sizing: border-box;
     margin: 0;
@@ -31,4 +31,12 @@
     font-family: 'Bebas Neue', cursive;
     color: #333;
     margin: 1rem;
+}
+
+
+
+
+.main-container {
+    width: 20rem;
+    margin: auto;
 }
