@@ -1,13 +1,7 @@
 
 
-
-
 const Title = () => {
-    return (
-        <>
-            <h1 style={{ width: '10rem', margin: 'auto' }}>Todo List</h1>
-        </>
-    )
+    return <h1>Title todo</h1>
 }
 
 export default Title;

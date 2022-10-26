@@ -10,6 +10,7 @@
 }
 
 .listItem {
+    width: 25rem;
     margin: 2rem;
     border: 3px solid aqua;
     padding: 1rem;
@@ -22,11 +23,11 @@
 
 }
 
-#list {
+.list {
     display: flex;
 }
 
-#title {
+.title {
     font-size: 5rem;
     font-family: 'Bebas Neue', cursive;
     color: #333;
@@ -37,6 +38,6 @@
 
 
 .main-container {
-    width: 20rem;
+    width: 30rem;
     margin: auto;
 }

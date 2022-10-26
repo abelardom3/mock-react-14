@@ -2,37 +2,31 @@ import { useState } from "react";
 
 
 
-const Form = ({ addToTodo }) => {
+const Form = ({ addText }) => {
 
-    const [text, setText] = useState('')
+    const [text, setText] = useState({ title: "" })
+
+    const handleChange = (e) => {
+        setText({ ...text, title: e.target.value })
+    }
 
     const handleSub = (e) => {
         e.preventDefault()
-        addToTodo(text)
-        setText("")
+        addText(text)
+        setText({ ...text, title: '' })
     }
-
-    const handleChange = (e) => {
-        console.log(e.target.value)
-        setText(e.target.value)
-    }
-
-
 
 
     return (
         <>
             <form onSubmit={handleSub}>
-                <label>New Todo</label>
-                <input type='text' value={text} onChange={handleChange} />
+                <input type='text' value={text.title} onChange={handleChange} />
                 <input type='submit' />
             </form>
 
 
         </>
     )
-
-
 
 }
 

@@ -1,11 +1,13 @@
 
 
 const SingleTodo = ({ todo }) => {
+
     return (
         <>
-            <h2>{todo}</h2>
+            <h2 className="listItem">{todo.title}</h2>
         </>
     )
+
 }
 
 export default SingleTodo;
